@@ -800,10 +800,10 @@
     }
 
     .img3d {
-        width: 145px;
+        width: 141px;
         position: absolute;
         top: 600px;
-        left: 222px;
+        left: 213px;
     }
 
     .imgprog {
@@ -847,7 +847,7 @@
         font-size: 0.8rem;
     }
     .form-container {
-        width: 320px;
+        width: 300px;
     position: relative;
     left: 10px;
     }
