@@ -37,7 +37,9 @@
 #hrrm {
 
     background-color: rgb(202, 202, 202) !important;
-
+    -webkit-box-shadow: 12px 5px 25px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 5px 25px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 5px 25px -4px rgba(0, 0, 0, 0.75);
 }
 
 #milogo {
@@ -45,13 +47,13 @@
     border-radius: 200px !important;
 
     position: relative !important;
-    left: 200px !important;
+    left: 230px !important;
 
 }
 
 #typed {
 
-    background-color: rgb(142, 181, 255)!important;
+    background-color: rgb(142, 181, 255) !important;
     font-size: 1.1rem;
     font-weight: 800;
     color: rgb(0, 0, 0);
@@ -61,7 +63,7 @@
 #texthrr {
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.45);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
     font-weight: 900;
 }
 
@@ -162,7 +164,7 @@
 }
 
 .btne:hover {
-    box-shadow: inset 0px 0px 25px #b5bb67;
+    box-shadow: inset 0px 0px 25px #feffef6e;
 }
 
 .card-body {
@@ -188,8 +190,12 @@
     border-radius: 8px;
     z-index: 1;
     outline: 1px solid #2e2e2e;
-    transition: outline 1s ease 0s
+    transition: outline 1s ease 0s ;
+    -webkit-box-shadow: 12px 5px 25px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 5px 25px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 5px 25px 1px rgba(0, 0, 0, 0.75);
 }
+
 .carde:hover {
     outline: 3px solid #79f561;
 }
@@ -258,6 +264,129 @@
     font-size: 0.7rem;
 }
 
+/*form*/
+
+
+.form-container {
+    width: 400px;
+    background: linear-gradient(#011522, #0c0c0c) padding-box,
+        linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-container button:active {
+    scale: 0.95;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+
+
+/*btn*/
 .css-button-arrow--blue:hover {
     border-radius: 5px;
     padding-right: 24px;
@@ -562,60 +691,68 @@
     animation-name: tada;
     animation-delay: 6s;
 }
+
 /*base code*/
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-  }
-  .animated.infinite {
+}
+
+.animated.infinite {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-  }
-  .animated.hinge {
+}
+
+.animated.hinge {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-  }
-  /*the animation definition*/
-  @-webkit-keyframes rotate {
+}
+
+/*the animation definition*/
+@-webkit-keyframes rotate {
     0% {
-      -webkit-transform-origin: center;
-      transform-origin: center;
-      -webkit-transform: rotate3d(0, 0, 1, -200deg);
-      transform: rotate3d(0, 0, 1, -200deg)
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg)
     }
+
     100% {
-      -webkit-transform-origin: center;
-      transform-origin: center;
-      -webkit-transform: none;
-      transform: none
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none
     }
-  }
-  @keyframes rotate {
+}
+
+@keyframes rotate {
     0% {
-      -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-      transform-origin: center;
-      -webkit-transform: rotate3d(0, 0, 1, -200deg);
-      -ms-transform: rotate3d(0, 0, 1, -200deg);
-      transform: rotate3d(0, 0, 1, -200deg)
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        -ms-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg)
     }
+
     100% {
-      -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-      transform-origin: center;
-      -webkit-transform: none;
-      -ms-transform: none;
-      transform: none
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
     }
-  }
-  .rotate {
+}
+
+.rotate {
     -webkit-animation-name: rotate;
     animation-name: rotate
-  }
+}
 
-                                    
+
 
 
 
@@ -663,9 +800,9 @@
     }
 
     .img3d {
-        width: 154px;
+        width: 145px;
         position: absolute;
-        top: 561px;
+        top: 600px;
         left: 222px;
     }
 
@@ -709,5 +846,12 @@
         height: 275px;
         font-size: 0.8rem;
     }
-    
+    .form-container {
+        width: 320px;
+    position: relative;
+    left: 10px;
+    }
+    .contactos{
+        margin-top: 100px !important;
+    }
 }
