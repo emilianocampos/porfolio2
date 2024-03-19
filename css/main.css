@@ -1,0 +1,713 @@
+.maincontainer {
+    background: rgb(113, 113, 113) !important;
+    background: radial-gradient(circle, rgba(113, 113, 113, 1) 48%, rgba(0, 0, 0, 1) 100%) !important;
+
+    margin-top: -36px !important;
+}
+
+.p1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.45);
+}
+
+#headm {
+
+    margin-top: -72px !important
+}
+
+#navbar {
+    background-color: rgba(0, 0, 0, 1) 100% !important;
+}
+
+.h1a {
+    font-size: 1.5rem;
+    color: rgb(251, 255, 242) !important;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.45);
+
+}
+
+.svgimg {
+    width: 40px;
+}
+
+#hrrm {
+
+    background-color: rgb(202, 202, 202) !important;
+
+}
+
+#milogo {
+    width: 250px !important;
+    border-radius: 200px !important;
+
+    position: relative !important;
+    left: 200px !important;
+
+}
+
+#typed {
+
+    background-color: rgb(142, 181, 255)!important;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+
+}
+
+#texthrr {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.45);
+    font-weight: 900;
+}
+
+#mp {
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.45);
+    margin-bottom: 50px;
+}
+
+.imgpc {
+
+    display: flex;
+    justify-content: center;
+}
+
+.imgpca {
+    width: 700px;
+}
+
+.h1b {
+    font-size: 2rem;
+    color: rgb(251, 255, 242) !important;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.45);
+}
+
+.imgprog {
+    width: 50px;
+
+}
+
+.nav-link {
+
+    text-align: center;
+    font-size: 1.3rem !important;
+
+}
+
+.img3d {
+    width: 200px;
+    position: absolute;
+    top: 420px;
+    left: 1010px;
+}
+
+
+/*btn*/
+.btne {
+    width: 200px !important;
+    position: relative !important;
+    height: 3.5em !important;
+    border: 3px ridge #b6b6b6 !important;
+    outline: none !important;
+    background-color: transparent !important;
+    color: rgb(212, 212, 212) !important;
+    transition: 1s !important;
+    border-radius: 0.3em !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    background-color: rgb(0, 0, 0) !important;
+    box-shadow: 14px 8px 10px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 8px 10px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 8px 10px 4px rgba(0, 0, 0, 0.75);
+}
+
+.btne::after {
+    content: "" !important;
+    position: absolute !important;
+    top: -10px !important;
+    left: 3% !important;
+    width: 95% !important;
+    height: 40% !important;
+
+    transition: 0.5s !important;
+    transform-origin: center !important;
+}
+
+.btne::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+
+    transition: 0.5s;
+}
+
+.btne:hover::before,
+.btne:hover::after {
+    transform: scale(0)
+}
+
+.btne:hover {
+    box-shadow: inset 0px 0px 25px #b5bb67;
+}
+
+.card-body {
+    position: relative;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pry {
+    margin: 20px;
+    display: flex !important;
+}
+
+.carde {
+    width: 190px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+    outline: 1px solid #2e2e2e;
+    transition: outline 1s ease 0s
+}
+.carde:hover {
+    outline: 3px solid #79f561;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.imgpry {
+    width: 100px;
+}
+
+.npry {
+    color: white;
+    font-size: 100%;
+}
+
+.imgprya {
+
+    width: 100%;
+
+}
+
+.css-button-arrow--blue {
+    width: 110px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(33, 77, 160);
+    font-size: 0.7rem;
+}
+
+.css-button-arrow--blue:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.css-button-arrow--blue:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.css-button-arrow--blue:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*base code txt*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+/*the animation definition*/
+@-webkit-keyframes fadeInDownBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInDownBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        -ms-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+.fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig
+}
+
+
+
+
+/*base code nav*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+/*the animation definition*/
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+
+
+
+
+/*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+/*the animation definition*/
+@-webkit-keyframes rotateInUpRight {
+    0% {
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate3d(0, 0, 1, -90deg);
+        transform: rotate3d(0, 0, 1, -90deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@keyframes rotateInUpRight {
+    0% {
+        -webkit-transform-origin: right bottom;
+        -ms-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate3d(0, 0, 1, -90deg);
+        -ms-transform: rotate3d(0, 0, 1, -90deg);
+        transform: rotate3d(0, 0, 1, -90deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform-origin: right bottom;
+        -ms-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+.rotateInUpRight {
+    -webkit-animation-name: rotateInUpRight;
+    animation-name: rotateInUpRight
+}
+
+/*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+
+}
+
+/*the animation definition*/
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    10%,
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    animation-delay: 6s;
+}
+/*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  /*the animation definition*/
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: rotate3d(0, 0, 1, -200deg);
+      transform: rotate3d(0, 0, 1, -200deg)
+    }
+    100% {
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: none;
+      transform: none
+    }
+  }
+  @keyframes rotate {
+    0% {
+      -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: rotate3d(0, 0, 1, -200deg);
+      -ms-transform: rotate3d(0, 0, 1, -200deg);
+      transform: rotate3d(0, 0, 1, -200deg)
+    }
+    100% {
+      -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none
+    }
+  }
+  .rotate {
+    -webkit-animation-name: rotate;
+    animation-name: rotate
+  }
+
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    #milogo {
+        width: 139px !important;
+        border-radius: 200px !important;
+        margin-top: 70px;
+        position: relative !important;
+        left: 98px !important;
+
+    }
+
+    #texthrr {
+        color: rgb(39, 39, 39);
+        font-size: 1.2rem;
+        font-weight: 800;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.45);
+    }
+
+    .btne {
+        width: 160px !important;
+        font-size: 0.9rem !important;
+    }
+
+    .img3d {
+        width: 154px;
+        position: absolute;
+        top: 561px;
+        left: 222px;
+    }
+
+    .imgprog {
+        width: 50px;
+        position: relative;
+        right: 200px;
+    }
+
+    .p1 {
+
+        font-size: 1rem;
+    }
+
+    #headm {
+
+        margin-top: 49px !important
+    }
+
+    .h1a {
+        font-size: 1.4rem;
+        color: rgb(251, 255, 242) !important;
+        text-align: center;
+    }
+
+    .h1b {
+
+        font-size: 1.5rem;
+
+
+    }
+
+    .imgpca {
+        width: 300px;
+
+    }
+
+    .carde {
+        margin-top: 31px;
+
+        height: 275px;
+        font-size: 0.8rem;
+    }
+    
+}
