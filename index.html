@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Small Business - Start Bootstrap Template</title>
+    <title>Programación | Emiliano campos</title>
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/stylesboot.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
@@ -16,7 +17,6 @@
 </head>
 
 <body>
-    <!-- Responsive navbar-->
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
@@ -30,16 +30,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fadeIn animated">
 
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Redes</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#headm">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#mp">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#forms">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#red">Redes</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!-- Page Content-->
+
     <main class="maincontainer">
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
@@ -47,17 +49,21 @@
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0 " src="./img/emi.jpg" alt="..."
                         id="milogo" /></div>
                 <div class="col-lg-5">
-                    <h1 class="h1b">Emiliano Campos</h1>
+                    <p class="h1b">Emiliano Campos</p>
                     <h1 class="h1a">Desarrollador de sitios y aplicaciones webs</h1>
                     <div id="typed-strings">
-                        <p>Bienvenido a mi portafolio, acá vas a encontrar mis proyectos como mi contacto, para que
-                            empecemos a trabajar juntos.</p>
+                        <p>Bienvenido a mi porfolio, acá vas a encontrar mis proyectos como mi contacto, para que empecemos a trabajar juntos.</p>
                     </div>
                     <span id="typed"></span>
                     <p class="p1">Hoy en día existen alrededor de 5.350 millones de usuarios en internet, por lo que
-                        contar con una página web que destaque verdaderamente, va a contribuir aumentar las ventas de tu
+                        contar con una página web que destaque verdaderamente, va a contribuir aumentar las ventas
+                        de tu
                         producto/servicio de forma directa.</p>
-                    <a class="" href="#!"><button class="btne tada animated">Quiero mi pagina web</button></a>
+
+                    <div class="demo">
+
+                        <a id="demogra" href="#forms"><button class="btne tada animated">Soliciar demo</button></a>
+                    </div>
                 </div>
             </div>
 
@@ -70,12 +76,12 @@
                     </p>
                     <img src="./img/adobe-photoshop.png" alt="" class="svgimg">
                     <img src="./img/figma.png" alt="" class="svgimg">
-                    <img src="./img/icons8-html-48.png" alt="">
-                    <img src="./img/icons8-css-48.png" alt="">
+                    <img src="./img/icons8-html-48.png" alt="" class="svgimg">
+                    <img src="./img/icons8-css-48.png" alt="" class="svgimg">
                     <img src="./img/bootstrap.png" alt="" class="svgimg">
-                    <img src="./img/icons8-sass-48.png" alt="">
-                    <img src="./img/icons8-javascript-48.png" alt="">
-                    <img src="./img/icons8-react-js-40.png" alt="">
+                    <img src="./img/icons8-sass-48.png" alt="" class="svgimg">
+                    <img src="./img/icons8-javascript-48.png" alt="" class="svgimg">
+                    <img src="./img/icons8-react-js-40.png" alt="" class="svgimg">
                     <img src="./img/git.png" alt="" class="svgimg">
                     <img src="" alt="">
                 </div>
@@ -305,15 +311,15 @@
 
                     </div>
                 </div>
-                <div class="escri">
-                    <img src="./img/escri.png" alt="" class="imgescri">
+                <div class="escri" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                    <img src="./img/escri.svg" alt="" class="imgescri">
                 </div>
 
-                <p id="mp" class="contactos" data-aos="flip-up">Contactame</p>
 
                 <!-- Content Row-->
             </div>
-            <div class="cnt">
+            <p id="mp" class="contactos" data-aos="flip-up">Contactame</p>
+            <div class="cnt" id="forms">
 
 
                 <div class="form-container">
@@ -328,25 +334,26 @@
                             <span class="green box"></span>
                         </div>
                     </div>
-                    <form class="form">
+                    <form class="form" action="https://formsubmit.co/emicampos1268@gmail.com" method="POST">
                         <div class="form-group">
-                            <label for="email">Tu email</label>
+                            <label for="email" >Tu email</label>
                             <input required="" name="email" id="email" type="text">
                         </div>
                         <div class="form-group">
                             <label for="text">Nombre</label>
-                            <input required="" name="text" id="text" type="text">
+                            <input required="" name="nombre" id="text" type="text">
                         </div>
                         <div class="form-group">
                             <label for="textarea">Consultas</label>
-                            <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
+                            <textarea required="" cols="50" rows="10" id="textarea" name="textarea" name="consulta"></textarea>
                         </div>
+                        <input type="hidden" name="_next" value="https://galenoskinesiologia.netlify.app/">
                         <button type="submit" class="css-button-arrow--blue">Enviar</button>
                     </form>
                 </div>
             </div>
 
-            <ul class="wrapper">
+            <ul class="wrapper" id="red">
                 <li class="icon wapp">
                     <span class="tooltip">2804198600</span>
                     <span><i class="fab fa-wapp-f"></i><img src="./img/icons8-whatsapp-48.png" alt=""></span>
@@ -368,6 +375,9 @@
         </div>
     </footer>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
