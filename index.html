@@ -50,11 +50,10 @@
                     <img class="img-fluid rounded mb-4 mb-lg-0 " src="./img/emi.jpg" alt="..." id="milogo" />
                 </div>
                 <div class="col-lg-5">
-                    <p class="h1b">Emiliano Campos</p>
+                    <p class="h1b" id="emia">Emiliano Campos</p>
                     <h1 class="h1a">Desarrollador de sitios y aplicaciones webs</h1>
                     <div id="typed-strings">
-                        <p>Bienvenido a mi porfolio, acá vas a encontrar mis proyectos como mi contacto, para que
-                            empecemos a trabajar juntos.</p>
+                        <p>Bienvenido a mi porfolio, acá vas a encontrar mis proyectos como mi contacto, para que empecemos a trabajar juntos.</p>
                     </div>
                     <span id="typed"></span>
                     <p class="p1">Hoy en día existen alrededor de 5.350 millones de usuarios en internet, por lo que
@@ -376,8 +375,152 @@
         </div>
     </footer>
 
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.5.0-insiders.88df1ef/dist/core-and-studio.js'
+        // We can now access Theatre.core and Theatre.studio from here
 
 
+        studio.initialize()
+        import 'https://cdn.jsdelivr.net/npm/@theatre/browser-bundles@0.5.0-insiders.88df1ef/dist/core-only.min.js'
+        // We can now access just Theatre.core from here
+
+        const articleHeadingElement = document.getElementById('imglogo')
+
+        // Exported by clicking the project name and "Export Project Name to JSON" button.
+        const projectState = {
+  "sheetsById": {
+    "Sheet 1": {
+      "staticOverrides": {
+        "byObject": {
+          "Heading 1": {
+            "opacity": 0
+          }
+        }
+      },
+      "sequence": {
+        "subUnitsPerUnit": 30,
+        "length": 10,
+        "type": "PositionalSequence",
+        "tracksByObject": {
+          "Heading 1": {
+            "trackData": {
+              "AMxR1UfGWM": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Heading 1:[\"y\"]",
+                "keyframes": [
+                  {
+                    "id": "9h8-5zLTsY",
+                    "position": 0,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": -246
+                  },
+                  {
+                    "id": "3Ty5Qa0jx9",
+                    "position": 5.033,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 0
+                  },
+                  {
+                    "id": "VqLcRqRGtN",
+                    "position": 7.733,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 0
+                  }
+                ]
+              },
+              "HNE0hqF2Ep": {
+                "type": "BasicKeyframedTrack",
+                "__debugName": "Heading 1:[\"opacity\"]",
+                "keyframes": [
+                  {
+                    "id": "i7FUG1iVuG",
+                    "position": 0,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 0
+                  },
+                  {
+                    "id": "7mkOuxRFrN",
+                    "position": 7.867,
+                    "connectedRight": true,
+                    "handles": [
+                      0.5,
+                      1,
+                      0.5,
+                      0
+                    ],
+                    "value": 1
+                  }
+                ]
+              }
+            },
+            "trackIdByPropPath": {
+              "[\"y\"]": "AMxR1UfGWM",
+              "[\"opacity\"]": "HNE0hqF2Ep"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "GTWDOYlbUAhWUYjk",
+    "IgwaHb2xWCuVbEy0"
+  ]
+}
+
+        const { core } = Theatre
+
+        // We don't need studio in production
+        // studio.initialize()
+
+        const project = core.getProject('HTML porfolio2', {
+            state: projectState,
+        })
+
+        const sheet = project.sheet('Sheet 1')
+        const obj = sheet.object('Heading 1', {
+            y: 0,
+            opacity: core.types.number(1, { range: [0, 1] }),
+        })
+
+        // animations
+        obj.onValuesChange((obj) => {
+            articleHeadingElement.style.transform = `translateY(${obj.y}px)`
+            articleHeadingElement.style.opacity = obj.opacity
+        })
+
+        // wait for project to be ready
+        project.ready.then(() => {
+            sheet.sequence.play({ iterationCount: Infinity, range: [0, 6] })
+        })
+    </script>
+
+    <script src="./js/teat.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -387,7 +530,6 @@
     <script src="anijs-min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="./js/main.js"></script>
-
 </body>
 
 </html>
