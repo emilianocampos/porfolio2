@@ -31,7 +31,11 @@ demoLink.addEventListener('click', () => {
 function reproducirAudio() {
   audio.play();
 } 
-
+// Evento para reproducir el audio al cargar la página
+window.onload = function () {
+  reproducirAudio();
+};
+reproducirAudio();
 reproducirAudio();
 function pausarAudio() {
   audio.pause();
@@ -42,10 +46,6 @@ function detenerAudio() {
   audio.pause();
   audio.currentTime = 0;
 }
-// Evento para reproducir el audio al cargar la página
-window.onload = function () {
-  reproducirAudio();
-};
 
 
 
