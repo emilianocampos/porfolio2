@@ -498,6 +498,7 @@ input:focus {
     font-weight: 800;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.45);
     color: white;
+    
 }
 
 #swal2-title {
@@ -509,7 +510,11 @@ input:focus {
 }
 
 .swal2-popup {
-    background-color: rgb(56, 56, 56) !important;
+
+    background: linear-gradient(#011522, #0c0c0c) padding-box,
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+border: 2px solid transparent;
+animation: gradient 5s ease infinite;
 }
 
 .swal2-confirm {
